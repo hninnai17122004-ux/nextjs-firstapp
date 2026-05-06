@@ -10,11 +10,11 @@ import 'swiper/css/pagination';
 const Page = () => {
     return (
          <div className="min-h-screen flex items-center justify-center bg-[#181818] p-4">
-            <div className="w-full md:wd-600px">
+            <div className="w-full md:wd-600px mx-auto">
                 <Swiper
                     modules={[Pagination]}
                     pagination={{ clickable: true }}
-                    className="w-full h-[500px] md:h-[700px] rounded-2xl overflow-hidden shadow-2xl md:mt-30 md:mb-30 "
+                    className="w-92% h-auto rounded-2xl overflow-hidden shadow-2xl md:mt-30 md:mb-30 "
                 >
                     <SwiperSlide>
                         <img

@@ -3,14 +3,17 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between bg-[#1c1c1e] px-4 py-5 text-white border-b border-gray-800">
-      <div className="text-yellow-500 text-xl md:text-2xl font-bold uppercase cursor-pointer shrink-0">
+     <header className="flex items-center justify-between bg-[#1c1c1e] px-2 py-4 w-full border-b border-gray-800 gap-1">
+      
+      <div className="flex-shrink-0">
         <Link href="/">
-          BERRY<span className="text-white">MOVIE</span>
+          <h1 className="text-yellow-500 text-sm sm:text-base md:text-2xl font-black uppercase whitespace-nowrap">
+            BERRY<span className="text-white">MOVIE</span>
+          </h1>
         </Link>
       </div>
 
-      <section className="flex items-center gap-4 md:gap-8 text-[10px]  md:text-[15px] mr-3 ml-3">
+      <section className="flex items-center gap-2 sm:gap-4 md:gap-6 text-[10px] sm:text-[12px] text-white md:text-sm font-bold uppercase whitespace-nowrap overflow-x-auto scrollbar-hide px-1">
         <Link href="/home">
           <button className="hover:text-[#ffb400] transition">Home</button>
         </Link>
@@ -23,8 +26,11 @@ const Header = () => {
         <Link href="/forgot-password">
           <button className="hover:text-[#ffb400] transition">Forgot Password</button>
         </Link>
-        <button className="hover:text-[#ffb400] transition">404</button>
+        <Link href="/404">
+          <button className="hover:text-[#ffb400] transition">404</button>
+        </Link>
       </section>
+
     </header>
   );
 };
