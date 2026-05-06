@@ -1,47 +1,49 @@
 'use client'
 
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
-import 'swiper/css'
-import 'swiper/css/pagination'
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Page = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-[#181818] p-4">
-            <div className="w-full max-w-md">
+         <div className="min-h-screen flex items-center justify-center bg-[#181818] p-4">
+            <div className="w-full md:wd-600px">
                 <Swiper
                     modules={[Pagination]}
                     pagination={{ clickable: true }}
-                    className="w-full h-[350px] md:h-[700px] rounded-2xl overflow-hidden shadow-2xl"
+                    className="w-full h-[500px] md:h-[700px] rounded-2xl overflow-hidden shadow-2xl md:mt-30 md:mb-30 "
                 >
                     <SwiperSlide>
                         <img
-                            src="https://tse4.mm.bing.net/th/id/OIP.vVHHr5bcUHWoICjuYOrFCwHaLv?rs=1&pid=ImgDetMain&o=7&rm=3"
-                            className="w-full h-full object-cover"
+                             src="https://wallpaperbat.com/img/80136101-up-cartoon-wallpaper-27-image.jpg"
+                            className="w-full rounded-lg object-cover"
                             alt="Slide 1"
                         />
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <img
-                            src="https://tse2.mm.bing.net/th/id/OIP.ZkkNmttEDPoEWAQ8mes4zAHaNK?rs=1&pid=ImgDetMain&o=7&rm=3"
-                            className="w-full h-full object-cover"
+                             src="https://wallpapercave.com/wp/wp4757526.jpg"
+                            className="w-full rounnded-lg object-cover"
                             alt="Slide 2"
                         />
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <img
-                            src="https://tse4.mm.bing.net/th/id/OIP.-c1O_MEeWduxSnlv1242WwHaK9?rs=1&pid=ImgDetMain&o=7&rm=3"
-                            className="w-full h-full object-cover"
-                            alt="Slide 3"
+                            src="https://screenradar.com/wp-content/uploads/2023/11/garfield.jpg"
+                            className="w-full rounnded-lg object-contain "
+                            alt="Slide 2"
                         />
                     </SwiperSlide>
                 </Swiper>
             </div>
         </div>
+       
+      
     )
 }
 
