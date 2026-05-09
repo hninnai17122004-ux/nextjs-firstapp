@@ -2,49 +2,53 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
+// CSS file တွေကတော့ Swiper အလုပ်လုပ်ဖို့ လိုကိုလိုပါတယ် (ဒါတွေက library ရဲ့ base တွေပါ)
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Page = () => {
-    return (
-         <div className="min-h-screen flex items-center justify-center bg-[#181818] p-4">
-            <div className="w-full md:wd-600px mx-auto">
-                <Swiper
-                    modules={[Pagination]}
-                    pagination={{ clickable: true }}
-                    className="w-92% h-auto rounded-2xl overflow-hidden shadow-2xl md:mt-30 md:mb-30 "
-                >
-                    <SwiperSlide>
-                        <img
-                             src="https://wallpaperbat.com/img/80136101-up-cartoon-wallpaper-27-image.jpg"
-                            className="w-full rounded-lg object-cover"
-                            alt="Slide 1"
-                        />
-                    </SwiperSlide>
+  return (
+    <div className="min-h-screen bg-[#181818] flex flex-col items-center pt-20 px-0">
+    
+        
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000 }}
+        
+          className="w-full h-[450px] md:h-[600px] lg:h-[80vh]"
+        >
+          <SwiperSlide>
+            <img 
+              src="https://static1.srcdn.com/wordpress/wp-content/uploads/2018/12/Princess-Mononoke.jpeg" 
+              className="w-full h-full object-cover object-center" 
+              alt="Slide 1"
+            />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <img
-                             src="https://wallpapercave.com/wp/wp4757526.jpg"
-                            className="w-full rounnded-lg object-cover"
-                            alt="Slide 2"
-                        />
-                    </SwiperSlide>
+          <SwiperSlide>
+            <img 
+              src="https://wallpapercave.com/wp/wp4757526.jpg" 
+              className="w-full h-full object-cover object-center"
+              alt="Slide 2"
+            />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <img
-                            src="https://screenradar.com/wp-content/uploads/2023/11/garfield.jpg"
-                            className="w-full rounnded-lg object-contain "
-                            alt="Slide 2"
-                        />
-                    </SwiperSlide>
-                </Swiper>
-            </div>
-        </div>
-       
-      
-    )
-}
+          <SwiperSlide>
+            <img 
+              src="https://4kwallpapers.com/images/wallpapers/snow-white-and-the-2560x1440-21917.png" 
+              className="w-full h-full object-cover object-center"
+              alt="Slide 3"
+            />
+          </SwiperSlide>
+        </Swiper>
 
-export default Page
+      </div>
+    
+  );
+};
+
+export default Page;
