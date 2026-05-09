@@ -10,7 +10,7 @@ const Header = () => {
       <div className="flex items-center justify-between px-4 py-4 max-w-7xl mx-auto relative">
 
         
-          <h1 className="text-yellow-500 text-xl font-black uppercase tracking-tighter">
+          <h1 className="text-yellow-500 text-3xl font-black uppercase tracking-tighter">
             BERRY<span className="text-white">MOVIE</span>
           </h1>
         
@@ -31,15 +31,15 @@ const Header = () => {
             <Link href="/home" className="text-white hover:text-[#ffb400] font-bold w-full p-2">Home</Link>
             <Link href="/signin" className="text-white hover:text-[#ffb400] font-bold w-full p-2">Sign In</Link>
             <Link href="/signup" className="text-white hover:text-[#ffb400] font-bold w-full p-2">Sign Up</Link>
-            <Link href="/fotgot-password" className="text-white hover:text-yellow-500 font-bold w-full p-2">Forgot Password?</Link>
+            <Link href="/fotgot-password" className="text-white  hover:text-[#ffb400] font-bold w-full p-2">Forgot Password?</Link>
             <Link href="/404">
             <button className='hover:text-[#ffb400] font-bold w-full p-2 text-white'>404</button></Link>
           </div>
         </label>
 
-        <nav className="hidden md:flex flex items-center justify-between gap-6 test-xl ml-auto whitespace-nowrap">
-          <Link href="/home" className="text-white hover:text-[#ffb400]font-bold font-bold w-full p-2">Home</Link>
-          <Link href="/signin" className="text-white hohover:text-[#ffb400] font-bold w-full p-2">Sign In</Link>
+        <nav className="hidden md:flex flex items-center justify-between gap-6 test-xl ml-auto whitespace-nowrap text-xl">
+          <Link href="/home" className="text-white hover:text-[#ffb400] font-bold font-bold w-full p-2">Home</Link>
+          <Link href="/signin" className="text-white hover:text-[#ffb400] font-bold w-full p-2">Sign In</Link>
           <Link href="/signup" className="text-white hover:text-[#ffb400] font-bold w-full p-2">Sign Up</Link>
           <Link href="/forgot-password" className="text-white hover:text-[#ffb400] font-bold w-full p-2">Forgot Password?</Link>
           <Link href="/404">

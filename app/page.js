@@ -23,7 +23,7 @@ const Page = () => {
         >
           <SwiperSlide>
             <img 
-              src="https://static1.srcdn.com/wordpress/wp-content/uploads/2018/12/Princess-Mononoke.jpeg" 
+              src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/03/princess-mononoke.jpg" 
               className="w-full h-full object-cover object-center" 
               alt="Slide 1"
             />
